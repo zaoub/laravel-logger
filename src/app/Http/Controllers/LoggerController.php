@@ -16,17 +16,8 @@ class LoggerController extends Controller
         return view('ZLL::index', $data);
     }
 
-    public function indexRead()
-    {
-        $data = [];
-        $data['logs'] = \LogReader::includeRead()->get();
-        // return $data;
-        return view('ZLL::index', $data);
-    }
-
     public function show($id)
     {
-        // return 5/0;
         $data = [];
         $data['log'] = \LogReader::find($id);
         // return $data;

@@ -7,10 +7,10 @@
             <div class="card-body">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('zlogger.index') }}">New</a>
+                        <a class="nav-link" href="{{ route('zlogger.index') }}">New</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('zlogger.all.index') }}">All</a>
+                        <a class="nav-link active" href="{{ route('zlogger.all.index') }}">All</a>
                     </li>
                     <li class="nav-item">
                 </ul>
@@ -28,7 +28,7 @@
                             <td>{{ $log->level }}</td>
                             <td>{{ $log->date }}</td>
                             <td>
-                                <a href="{{ route('zlogger.show', [$log->id]) }}" class="btn btn-info btn-sm">Show</a>
+                                <a href="{{ route('zlogger.all.show', [$log->id]) }}" class="btn btn-info btn-sm">Show</a>
                             </td>
                         </tr>
                         @endforeach

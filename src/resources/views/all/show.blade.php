@@ -8,7 +8,6 @@
                 <table class="table table-striped">
                     <p>Level: {{ $log->level }}</p>
                     <p>Date: {{ $log->date }}</p>
-                    <a href="{{ route('zlogger.markread', [$log->id]) }}" class="btn btn-info btn-sm mr-3">Mark is read</a>
                     <a href="{{ route('zlogger.delete', [$log->id]) }}" class="btn btn-danger btn-sm">Delete</a>
                 </table>
             </div> 
