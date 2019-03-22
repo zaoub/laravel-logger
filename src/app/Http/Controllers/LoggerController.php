@@ -29,8 +29,6 @@ class LoggerController extends Controller
         // return 5/0;
         $data = [];
         $data['log'] = \LogReader::find($id);
-        // \LogReader::find($id)->markRead();
-        // \LogReader::includeRead()->find($id)->delete();
         // return $data;
         return view('ZLL::show', $data);
     }
@@ -38,6 +36,12 @@ class LoggerController extends Controller
     public function markread($id)
     {
         \LogReader::find($id)->markRead();
+        return redirect()->route('zlogger.index');
+    }
+
+    public function delete($id)
+    {
+        \LogReader::includeRead()->find($id)->delete();
         return redirect()->route('zlogger.index');
     }
 }
