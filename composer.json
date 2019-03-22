@@ -1,0 +1,26 @@
+{
+    "name": "zaoub/laravel-logger",
+    "type": "library",
+    "require": {
+        "stevebauman/log-reader": "1.1.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Karim Mohamed",
+            "email": "komicho1996@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			"Zaoub\\Laravel\\": "/src"
+		}
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zaoub\\Laravel\\Support\\ServiceProvider"
+            ]
+        }
+    }
+}
