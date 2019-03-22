@@ -20,7 +20,11 @@ class LoggerController extends Controller
     {
         $data = [];
         $data['log'] = \LogReader::find($id);
-        // return $data;
+        
+        if (!$data['log']) {
+            abort(404);
+        }
+
         return view('ZLL::show', $data);
     }
 

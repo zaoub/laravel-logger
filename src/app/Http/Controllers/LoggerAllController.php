@@ -22,7 +22,11 @@ class LoggerAllController extends Controller
     {
         $data = [];
         $data['log'] = LogReader::includeRead()->find($id);
-        // return $data;
+        
+        if (!$data['log']) {
+            abort(404);
+        }
+
         return view('ZLL::all.show', $data);
     }
 
