@@ -1,19 +1,10 @@
 @extends('ZLL::layout')
 @section('content')
 <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-12">
         <div class="card">
             <div class="card-header">Logs</div>
             <div class="card-body">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('zlogger.index') }}">New</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="{{ route('zlogger.all.index') }}">All</a>
-                    </li>
-                    <li class="nav-item">
-                </ul>
                 <table class="table table-striped">
                     <thead>
                         <tr>
