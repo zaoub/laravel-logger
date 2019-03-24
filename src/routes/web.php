@@ -1,7 +1,7 @@
 <?php
 
 Route::group([
-    'prefix' => 'zlogger',
+    'prefix' => 'zll',
     'namespace' => 'Zaoub\Laravel\app\Http\Controllers',
     'middleware' => ['web', 'Zaoub\Laravel\app\Http\Middleware\AccessMiddleware']
 ], function () {

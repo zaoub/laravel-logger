@@ -22,4 +22,4 @@ ZAOUB_ZLL_ACCESS="admin@mail.com,supervisor@mail.com"
 ```
 > You can select more than one mail with a comma
 
-Go to [127.0.0.1:8000/zlogger](http://127.0.0.1:8000/zlogger/)
+Go to [127.0.0.1:8000/zll](http://127.0.0.1:8000/zll)
