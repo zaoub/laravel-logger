@@ -3,7 +3,7 @@
 Route::group([
     'prefix' => 'zlogger',
     'namespace' => 'Zaoub\Laravel\app\Http\Controllers',
-    'middleware' => 'web'
+    'middleware' => ['web', 'Zaoub\Laravel\app\Http\Middleware\AccessMiddleware']
 ], function () {
     Route::get('/', 'DashboardController@index')->name('zlogger.dashboard');
 
