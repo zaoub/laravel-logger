@@ -1,6 +1,7 @@
 {
     "name": "zaoub/laravel-logger",
     "type": "library",
+    "description": "View logs of errors that occur during playback on laravel",
     "require": {
         "stevebauman/log-reader": "1.1.*"
     },
